@@ -1,0 +1,59 @@
+/* Style for the search bar container */
+.search-bar {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the search bar container */
+}
+
+/* Style for the input field */
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+}
+
+/* Style for the search button */
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for the suggestions list */
+.suggestions-list {
+    position: absolute;
+    width: calc(100% - 20px); /* Adjust width to fit the input field and padding */
+    left: 0; /* Align to the left */
+    top: 100%; /* Position below the input field */
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+    z-index: 1000;
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Style for each suggestion item */
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left; /* Align suggestion text to the left */
+}
+
+/* Style for active suggestion item */
+.suggestions-list li.active {
+    background-color: #007bff;
+    color: white;
+}

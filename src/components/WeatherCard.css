@@ -1,0 +1,55 @@
+.weather-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.weather-card.loading {
+    background-color: #b26a6a;
+    color: #777;
+}
+
+.weather-card.error {
+    background-color: #ffdddd;
+    color: #900;
+}
+
+.weather-card h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #222222;
+}
+
+.weather-card img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.weather-card .description {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.weather-card .temperature {
+    font-size: 22px;
+    color: #007bff;
+}
+
+.weather-card .humidity,
+.weather-card .wind-speed {
+    font-size: 20px;
+    color: #666;
+}

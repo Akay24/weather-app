@@ -1,0 +1,47 @@
+.app {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #e3f2fd;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.app.dark-mode {
+  background-color: #212121;
+  color: #000000;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.app.dark-mode h1 {
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #0056b3;
+}
+
+.app.dark-mode .dark-mode-toggle {
+  background-color: #555;
+  color: #fff;
+}
+
+.app.dark-mode .dark-mode-toggle:hover {
+  background-color: #333;
+}
